@@ -64,9 +64,9 @@ public class SerpApiSearch extends Exception {
    * @param parameter user search
    * @param engine service like: google, yahoo, bing...
    */
-  public SerpApiSearch(Map<String, String> parameter, String engine) {
+  public SerpApiSearch(Map<String, String> parameter) {
     this.parameter = parameter;
-    this.engine = engine;
+    //this.engine = engine;
   }
 
  /***
@@ -120,7 +120,7 @@ public class SerpApiSearch extends Exception {
       }
     }
 
-    this.parameter.put("engine", this.engine);
+    //this.parameter.put("engine", this.engine);
 
     // Set output format
     this.parameter.put("output", output);

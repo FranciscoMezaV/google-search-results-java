@@ -41,7 +41,7 @@ public class GoogleSearch extends SerpApiSearch {
   * @param parameter search parameter
   */
   public GoogleSearch(Map<String, String> parameter) {
-    super(parameter, "google");
+    super(parameter);
   }
 
 // end
