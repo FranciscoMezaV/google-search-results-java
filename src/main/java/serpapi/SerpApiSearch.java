@@ -62,11 +62,19 @@ public class SerpApiSearch extends Exception {
    * Constructor
    *
    * @param parameter user search
-   * @param engine service like: google, yahoo, bing...
    */
   public SerpApiSearch(Map<String, String> parameter) {
     this.parameter = parameter;
-    //this.engine = engine;
+  }
+  /***
+   * Constructor
+   *
+   * @param parameter user search
+   * @param engine service like: google, yahoo, bing...
+   */
+  public SerpApiSearch(Map<String, String> parameter, String engine) {
+    this.parameter = parameter;
+    this.engine = engine;
   }
 
  /***
